@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 100vh;
+    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+    gap: 3rem;
+    padding: 2rem;
+}
+.content{
+    gap: 2rem;
+    padding: 2rem;
+}
+.content>h1{
+    font-size: 5rem;
+}
+.content>p,.form1>p{
+    font-size: 2rem;
+}
+.form1,.form2{
+    border: 3px solid black;
+    padding: 2rem;
+    border-color: pink;
+    box-shadow: 4px 4px #BFD641;
+    border-radius: 8px;
+}
+label{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+#user_name{
+    border-radius: 2px;
+    border-color:#BC70A4;
+    box-shadow: 2px 2px #BC70A4;
+}
+.button{
+    margin: 2rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border-color: #BC70A4;
+    box-shadow: 2px 2px #BC70A4;
+    border-radius: 4px;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #BFD641;
+}
+.ques_container{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+    gap: 1rem;
+    padding: 2rem;
+}
+.button_Ques{
+    font-size: 1.3rem;
+}
+header{
+    border: 0.1px solid #BC70A4;
+    border-radius: 4px;
+    box-shadow: 2px 5px #BC70A4;
+}
+.question{
+    font-size: 1.5rem;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:700px){
+    .content{padding: 0rem;}
+    .form1{
+        padding: 0.7rem;
+    }
+    .content>h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+    label{
+        font-size:1rem ;
+    }
+    .details{
+        font-size: 2rem;
+    }
+    .question{
+        font-size: 1rem;
+    }
+    #head-id{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
