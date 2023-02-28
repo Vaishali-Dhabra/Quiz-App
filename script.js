@@ -279,7 +279,7 @@ function showQuestion(page) {
             <div class="answers ques_container">
                 ${question.answers.map((answer,idx) => `
                 <div class="answer"> 
-                    <input type="radio" ${idx==0?"checked":""} name="question${currentQuestion}" 
+                    <input type="radio" name="question${currentQuestion}" 
                         id="q${currentQuestion}a" value="${currentQuestion}" 
                         data-question="${currentQuestion-1}" data-answer="${idx}" >
                     <label for="q${currentQuestion}a">${answer.text}</label>
